@@ -1,0 +1,5 @@
+#!/bin/sh
+
+FILENAME="data/"$1".txt"
+awk -F "\t" '{print $1 ".adj"}' $FILENAME \
+| tail -n +2

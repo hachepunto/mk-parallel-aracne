@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+bin/matrices \
+| xargs -I @ sh -c 'bin/which-genes-belon @ | sed -e "s/^/results\/@\//"' 

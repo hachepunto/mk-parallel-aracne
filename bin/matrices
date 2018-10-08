@@ -1,0 +1,8 @@
+#!/bin/sh
+
+find -L data/ \
+	-type f \
+	-name "*.txt" \
+| sed -r \
+ 	-e 's#^data/##' \
+ 	-e 's#\.txt$##'
