@@ -1,4 +1,5 @@
 <config.mk
+NPROC=$NPROC
 PWD=`pwd`
 
 results/%.genes.txt:	data/%.txt
